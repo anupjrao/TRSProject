@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Registration</title>
+<link rel="icon" type="image/png" href="Resources/ez1.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="Register.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function handlerEvent()
+    {
+        var un,p,name,age,gen,add,phone;
+        un=document.getElementById("usrn").value;
+        p=document.getElementById("pw").value;
+		name=document.getElementById("name").value;
+		age=document.getElementById("age").value;
+		phone=document.getElementById("ph").value;
+		add=document.getElementById("address").value;
+        if(un =="" || p == ""|| name == ""|| age == ""|| phone == "" || add == "")
+            {
+                alert("Required fields empty");
+                return false;
+            }
+        
+    }</script>
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<p>USER REGISTRATION</p>
+</div>
+<form action="register.php" method="post">
+<div id= "boxes">
+	Username:&nbsp;<input type="text" name="uname" placeholder="Username" id="usrn"><br />
+   	Password:&nbsp;&nbsp; <input type="password" name="pword" placeholder="Enter password" id="pw"><br />
+    Name:&nbsp;&nbsp;<input type="text" name="name" placeholder="Enter name" id="name"><br />
+    Age:&nbsp;&nbsp; <input type="text" name="age" placeholder="Enter age" id="age"><br />
+    Gender:&nbsp;&nbsp; <select id="gen" name="gen"><option value="male">Male</option><option value="female">Female</option></select><br />
+    <span class="adtext">Address:</span>&nbsp;&nbsp; <textarea name="address" placeholder="Enter address" id="address" rows="4" cols="50"></textarea><br />
+   	Phone:&nbsp;&nbsp; <input type="text" name="ph" placeholder="Enter phone" id="ph"><br />
+</div>
+	<div id=footer><input id ="bt1" type="submit" value="Register" onclick="return handlerEvent()"></div>
+
+</form>
+<div id="subfooter"><a href="Startpage.html">Home</a>&nbsp;&nbsp;<a href="Contact.html">Contact</a>&nbsp;&nbsp;<a href="About.html">About</a></div>
+</div>
+</body>
+</html>
+

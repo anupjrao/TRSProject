@@ -1,0 +1,39 @@
+
+<html">
+<head><title>Login/Registration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="icon" type="image/png" href="Resources/ez1.png" />
+<link href="Login.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function handlerEvent()
+    {
+        var un,p;
+        un=document.getElementById("usrn").value;
+        p=document.getElementById("pw").value;
+        if(un =="" || p == "")
+            {
+                alert("Username or Password field is empty");
+                return false;
+            }
+        
+    }</script>
+</head> 
+<body>
+<div id="container">
+<div id="header">
+<p>LOGIN PAGE</p>
+</div>
+<form action="login.php" method="post">
+
+	<center>Username:&nbsp; <input type="text" name="uname" placeholder="Username" id="usrn"></center><br />
+    <center>Password:&nbsp;&nbsp; <input type="password" name="pword" placeholder="Enter password" id="pw"></center><br />
+
+	<div id=footer><input id ="bt1" type="submit" value="Login" onClick="return handlerEvent()"></div>
+
+</form>
+<div id="subfooter"><a href="Startpage.html">Home</a>&nbsp;&nbsp;<a href="Contact.html">Contact</a>&nbsp;&nbsp;<a href="About.html">About</a></div>
+</div>
+</body>
+</html>
+

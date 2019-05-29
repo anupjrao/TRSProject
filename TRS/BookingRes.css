@@ -1,0 +1,84 @@
+charset "utf-8";
+/* CSS Document */
+tr td
+{
+}
+tr th {
+    padding:5px;
+	border-bottom:thick;
+	border-bottom-color:#F60;
+	background-color:#FC6;
+	border-bottom: 3px solid #F90;
+	font-weight:bolder;
+}
+tr td
+{
+	background-color:#F96;
+	font-weight:bold;
+	padding:5px;
+	
+}
+tr-nthchild:
+a
+{
+	color:#09F;
+}
+
+a:visited
+{
+	color:#09F;
+}
+
+table
+{
+	margin-left:auto;
+	margin-right:auto;
+	padding:5px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#container
+{
+
+	background-color:#333;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:16px;
+}
+
+#bt1
+{
+	width:150px;
+	border:none;
+	color:#FFF;
+	padding:10px;
+	text-align:center;
+	text-decoration:none;
+	display:block;
+	background-color:#4CAF50;;
+	font-size:16px;
+}
+
+#footer
+{
+	padding:10px;
+	margin-left:300px;
+	width:800px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+#header
+{
+	height:26px;
+	background-color:#09C;
+	text-align:center;
+	color:inherit;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:26px;
+	padding:5px;
+}
+
